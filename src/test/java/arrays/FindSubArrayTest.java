@@ -12,5 +12,15 @@ public class FindSubArrayTest {
         int[] expectedValue = {9, 3, 4};
         int[] actualValue = findSubArray.solution (arr, Sum);
         Assert.assertArrayEquals (expectedValue, actualValue);
+
+
+    } @Test
+    public void solution1() {
+        int[] arr = {5, 7, 8, 9, 3, 4, 2};
+        FindSubArray findSubArray = new FindSubArray ();
+        int Sum = 163;
+        int[] expectedValue = {0,-1};
+        int[] actualValue = findSubArray.solution (arr, Sum);
+        Assert.assertArrayEquals (expectedValue, actualValue);
     }
 }
